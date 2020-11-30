@@ -1,29 +1,49 @@
-# README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
 
-### What is this repository for? ###
+[![N|Solid](https://www.jojonomic.com/wp-content/uploads/2020/05/logo-jojonomic-with-ISO@2x-1.png)](https://jojonomic.com)
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+# Coding Test Jojonomic
 
-### How do I get set up? ###
+Create all endpoint bellow:
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+## Endpoints
 
-### Contribution guidelines ###
+### Root List
 
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+```
+GET http://api-gateway.co.id/document-service
+```
+Response:
+```
+{
+    "error": false,
+    "data": [
+         {
+             "id": "82b07a6f-60cc-4403-8fd2-329ef0de0d3d",
+             "name": "Folder Tech",
+             "type": "folder",
+             "is_public": true,
+             "owner_id": 1231,
+             "share": [123,232,4333],
+             "timestamp": 16576232323
+         },
+         {
+             "id": "82b07a6f-60cc-4403-8fd2-329ef0de045d",
+             "name": "Folder hrd",
+             "type": "folder",
+             "is_public": true,
+             "owner_id": 1231,
+             "share": [123,232,4333],
+             "timestamp": 16576232323
+         },
+        {
+             "id": "82b07a6f-60cc-4403-8fd2-329ef0de045d",
+             "name": "Document Job desc Tech",
+             "type": "document",
+             "owner_id": 1231,
+             "share": [123,232,4333],
+             "timestamp": 16576232323
+         }
+    ]
+}
+```

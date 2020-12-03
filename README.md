@@ -200,3 +200,33 @@ Response Body
     }
 }
 ```
+### Get Detail Document ###
+```
+GET http://api-gateway.pnm.co.id/document-service/document/:document_id
+```
+Response Body:
+```
+{
+    "error": false,
+    "message": "Success get document",
+    "data": { 
+                "document": {
+                     "id": "82b07a6f-60cc-4403-8fd2-329ef0de045d",
+                     "name": "Document Job desc Tech",
+                     "type": "document",
+                     "folder_id": "82b07a6f-60cc-4403-8fd2-329ef0de0d3e", // string kosong atau ada id foldernya
+                     "content": {
+                         "blocks": [
+                             {
+                                 "type": "paragraph",
+                                 "text": "This is paragraph"
+                             }
+                         ]
+                     }, // block editorjs
+                     "timestamp": 1605081795, //second unix timestamp
+                     "owner_id": 123, //user yg lagi login. atau user yang mau diserah terimakan dokumennya. Kalau 0, backend ambil dari data login
+                     "share": [1,23,4232,121] //share ke user lain
+                }
+    }
+}
+```

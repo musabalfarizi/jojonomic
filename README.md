@@ -25,8 +25,12 @@ qwertyuiopasdfghjklzxcvbnm123456
 ```
 You must validate every request by their JWT token. If the token is valid, you can use that information for authorize the document service. You can create your own JWT Token builder for the test.
 
+## Pull Request ##
+Fork this repo to your private repo, then start create the code. After creating the code, make pull request to master branch than inform us.
+
 ## Database and Programming Language
 Use Go and MongoDB. Make sure to comply SOLID Principle. Put all configuration in environment variable. Use https://github.com/joho/godotenv for load environment from a file.
+Share your postman collection in your pull request.
 
 ## Endpoints
 ### Root List
@@ -228,5 +232,22 @@ Response Body:
                      "share": [1,23,4232,121] //share ke user lain
                 }
     }
+}
+```
+### Delete Document ###
+```
+DELETE http://api-gateway.pnm.co.id/document-service/document
+```
+Request body
+```
+{
+        "id": "82b07a6f-60cc-4403-8fd2-329ef0de0d3d" //id document yang dihapus
+}
+```
+Response Body:
+```
+{
+    "error": false,
+    "message": "Success delete document",
 }
 ```

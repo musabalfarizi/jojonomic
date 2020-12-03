@@ -50,7 +50,8 @@ Response:
              "is_public": true,
              "owner_id": 1231,
              "share": [123,232,4333],
-             "timestamp": 16576232323
+             "timestamp": 16576232323,
+             "company_id": 23
          },
          {
              "id": "82b07a6f-60cc-4403-8fd2-329ef0de045d",
@@ -59,7 +60,8 @@ Response:
              "is_public": true,
              "owner_id": 1231,
              "share": [123,232,4333],
-             "timestamp": 16576232323
+             "timestamp": 16576232323,
+             "company_id": 23
          },
         {
              "id": "82b07a6f-60cc-4403-8fd2-329ef0de045d",
@@ -67,7 +69,8 @@ Response:
              "type": "document",
              "owner_id": 1231,
              "share": [123,232,4333],
-             "timestamp": 16576232323
+             "timestamp": 16576232323,
+             "company_id": 23
          }
     ]
 }
@@ -98,7 +101,8 @@ Response Body:
       "type": "folder",
       "content": {},
       "timestamp": 1605081795, 
-      "owner_id": 123
+      "owner_id": 123,
+      "company_id": 23
   }
 }
 ```
@@ -175,7 +179,8 @@ Request Body
     }, // block editorjs
     "timestamp": 1605081795, //second unix timestamp
     "owner_id": 123, //user yg lagi login. atau user yang mau diserah terimakan dokumennya. Kalau 0, backend ambil dari data login
-    "share": [1,23,4232,121] //share ke user lain
+    "share": [1,23,4232,121], //share ke user lain
+    "company_id": 23
 }
 ```
 Response Body

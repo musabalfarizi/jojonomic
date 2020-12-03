@@ -28,9 +28,12 @@ You must validate every request by their JWT token. If the token is valid, you c
 ## Pull Request ##
 Fork this repo to your private repo, then start create the code. After creating the code, make pull request to master branch than inform us.
 
-## Database and Programming Language
-Use Go and MongoDB. Make sure to comply SOLID Principle. Put all configuration in environment variable. Use https://github.com/joho/godotenv for load environment from a file.
+## Database and Programming Language ##
+Use programming language: Go, Rust, Typescript, Java, or any Strict Typed Language. Use database MongoDB, Firestore, or any NoSQL. Make sure to comply SOLID Principle. Put all configuration in environment variable. Use env loader (like https://github.com/joho/godotenv) for load environment from a file.
 Share your postman collection in your pull request.
+
+## Deployment ##
+Put makefile or install.sh in the main path. You can use dockerfile, kubernetes yaml file, or native compiler (go and rust).
 
 ## Endpoints
 ### Root List

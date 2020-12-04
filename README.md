@@ -83,7 +83,7 @@ Response:
     ]
 }
 ```
-If is_public is true, all user from all company can see the file or folder. If is_public is false, only owner and user in share can see the documents.
+If is_public is true, all user from a company can see the file or folder. If is_public is false, only owner and user in share can see the documents.
 
 ### Set Folder
 If the ID exist, system will update the folder. If the Folder ID not exist, system will create the folder. Every folder has owner_id. You can get owner_id from json web token.

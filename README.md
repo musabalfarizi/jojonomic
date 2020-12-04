@@ -34,6 +34,9 @@ Fork this repo to your private repo, then start create the code. After creating 
 Use programming language: Go, Rust, Typescript, Java, or any Strict Typed Language. Use database MongoDB, Firestore, or any NoSQL. Make sure to comply SOLID Principle. Put all configuration in environment variable. Use env loader (like https://github.com/joho/godotenv) for load environment from a file.
 Share your postman collection in your pull request.
 
+## Handle High Concurrent Client ##
+For an application, running well is not enough. It will face high concurrent problem. Do not let your apps down when thousands of user access it.  You can handle high concurrent problem with caching db, caching data logic,caching transform,jwt etc. 
+
 ## Deployment ##
 Put makefile or install.sh in the main path. You can use dockerfile, kubernetes yaml file, or native compiler (go and rust).
 

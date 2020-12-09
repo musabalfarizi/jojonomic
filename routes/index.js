@@ -6,8 +6,9 @@ const documentController = require('../controllers/documentController')
 const authenticateToken = require('../middleware/auth')
 
 
+router.use(authenticateToken)
 router.get('/',folderController.getAll)
-router.post('/folder',[authenticateToken],folderController.setFolder)
+router.post('/folder',folderController.setFolder)
 router.delete('/folder',folderController.deleteFolder)
 router.get('/folder/:folder_id',documentController.getFolderFiles)
 

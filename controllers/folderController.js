@@ -1,12 +1,22 @@
 const Document = require('../models/Document')
 const Folder = require('../models/Folder')
+const Redis = require("ioredis");
+const redis = new Redis();
 
 const getAll = async(req, res)=>{
     try {
+        const checkCache = await redis.get("all")
+        if(checkCache){
+            return res.status(200).json({
+                err: false,
+                data: JSON.parse(checkCache)
+            })
+        }
         let data = []
         documents = await Document.find()
         folders = await Folder.find()
         data = documents.concat(folders)
+        await redis.set('all', JSON.stringify(data))
         res.status(200).json({error:false,data})
     } catch (error) {
         res.status(500).json({error:true})
@@ -42,6 +52,11 @@ const setFolder = async(req,res)=>{
             company_id:company_id
         })
         newData = await newFolder.save()
+
+        checkCache = await redis.get('all')
+        cache = JSON.parse(checkCache)
+        cache.push(newData)
+        await redis.set('all',JSON.stringify(cache))
         return res.status(201).json({
             error:false,
             message: "folder created",
@@ -59,6 +74,14 @@ const setFolder = async(req,res)=>{
 const deleteFolder = async (req,res) => {
     let {id} = req.body
     try {
+        checkCache = await redis.get('all')
+        cache = JSON.parse(checkCache)
+        for (let index = 0; index < cache.length; index++) {
+            if(cache[index].id == id) {
+                cache.splice(index,1)
+            }
+        }
+        await redis.set('all',JSON.stringify(cache))
         Folder.deleteOne({ id: id }, function (err) {
             if (err) return res.status(500).json({error:true});
             return res.status(200).json({

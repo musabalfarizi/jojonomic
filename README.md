@@ -168,7 +168,7 @@ Response Body
 ```
 ### Set (Create/Update) document ###
 ```
-POST http://api-gateway.pnm.co.id/document-service/document
+POST http://api-gateway.co.id/document-service/document
 ```
 Request Body
 ```
@@ -219,7 +219,7 @@ Response Body
 ```
 ### Get Detail Document ###
 ```
-GET http://api-gateway.pnm.co.id/document-service/document/:document_id
+GET http://api-gateway.co.id/document-service/document/:document_id
 ```
 Response Body:
 ```
@@ -249,7 +249,7 @@ Response Body:
 ```
 ### Delete Document ###
 ```
-DELETE http://api-gateway.pnm.co.id/document-service/document
+DELETE http://api-gateway.co.id/document-service/document
 ```
 Request body
 ```

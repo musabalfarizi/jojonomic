@@ -1,0 +1,31 @@
+{
+  "name": "document-service",
+  "version": "1.0.0",
+  "description": "[![N|Solid](https://www.jojonomic.com/wp-content/uploads/2020/05/logo-jojonomic-with-ISO@2x-1.png)](https://jojonomic.com)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.ts",
+    "dev": "nodemon app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://arsyaprasamya@bitbucket.org/arsyaprasamya/document-service.git"
+  },
+  "author": "Arsya Prasamya",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/arsyaprasamya/document-service#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "epxress": "0.0.1-security",
+    "express": "^4.17.1",
+    "ioredis": "^4.19.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.5",
+    "morgan": "^1.10.0"
+  }
+}

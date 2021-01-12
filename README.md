@@ -40,6 +40,9 @@ For an application, running well is not enough. It will face high concurrent pro
 ## Deployment ##
 Put makefile or install.sh in the main path. You can use dockerfile, kubernetes yaml file, or native compiler (go and rust).
 
+## Coding Style ##
+Max line per file: 100 line. Max line per function/method: 30 line.
+
 ## Endpoints
 ### Root List
 Get list of a root of documents. The service will show all document and folder from the user's company. The company_id is provided by jwt token.

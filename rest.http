@@ -1,0 +1,4 @@
+
+GET http://localhost:3000/document-service
+
+Authorization:  Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJKb2pvbm9taWMiLCJpYXQiOjE2MDY2OTYyOTYsImV4cCI6MTYzODIzMjI5NiwiYXVkIjoiam9qb25vbWljLmNvbSIsInN1YiI6Impvam9hcmllZiIsImNvbXBhbnlfaWQiOiIxMzAiLCJ1c2VyX2lkIjoiMTIwIn0.jdnqi7hHmeeQlOJ1o-nZBxynTah-QuDj-SjItbol8XE

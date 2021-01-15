@@ -10,11 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://sipamungkas@bitbucket.org/sipamungkas/document-service.git"
+    "url": "git+https://musabalfarizi@bitbucket.org/jojocoders/document-service.git"
   },
-  "author": "Ragil Burhanudin Pamungkas",
+  "author": "Mus Ab Alfarizi",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/sipamungkas/document-service#readme",
+  "homepage": "https://bitbucket.org/musabalfarizi/document-service#readme",
   "devDependencies": {
     "nodemon": "^2.0.6"
   },

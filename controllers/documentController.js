@@ -25,6 +25,9 @@ const getFolderFiles = async (req,res) => {
     }
 }
 
+
+
+
 const setDocument = async (req,res) => {
     let {id,name,type,folder_id,content,timestamp,owner_id,share,company_id} = req.body
     if (owner_id == 0){

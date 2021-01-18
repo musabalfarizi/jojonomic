@@ -98,4 +98,7 @@ const deleteFolder = async (req,res) => {
 
 
 
+
+
+
 module.exports = {getAll,setFolder,deleteFolder}

@@ -1,33 +1,25 @@
 {
   "name": "document-service",
   "version": "1.0.0",
-  "description": "[![N|Solid](https://www.jojonomic.com/wp-content/uploads/2020/05/logo-jojonomic-with-ISO@2x-1.png)](https://jojonomic.com)",
-  "main": "app.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://musabalfarizi@bitbucket.org/jojocoders/document-service.git"
+    "url": "git+https://github.com/musabalfarizi/jojonomic.git"
   },
-  "author": "Mus Ab Alfarizi",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/musabalfarizi/document-service#readme",
-  "devDependencies": {
-    "nodemon": "^2.0.6"
+  "bugs": {
+    "url": "https://github.com/musabalfarizi/jojonomic/issues"
   },
+  "homepage": "https://github.com/musabalfarizi/jojonomic#readme",
   "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
-    "epxress": "0.0.1-security",
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "ioredis": "^4.19.2",
-    "jsonwebtoken": "^8.5.1",
-    "mongo": "^0.1.0",
-    "mongodb": "^3.6.3",
-    "mongoose": "^5.11.5",
-    "morgan": "^1.10.0"
+    "jsonwebtoken": "^8.5.1"
   }
 }
